@@ -1,0 +1,82 @@
+@font-face {
+  font-family: "SF-pro", sans-serif;
+  src: url("./assets/font/SF-Pro-Rounded-Semibold.ttf") format("ttf"),
+    url("./assets/font/SF-Pro-Rounded-Semibold.woff") format("woff");
+  font-weight: 400;
+}
+
+* {
+  justify-items: center;
+  font-family: "SF-pro", sans-serif;
+}
+
+body {
+  background-image: url("./assets/Mockup\ content\ \(3456\ px\ x\ 2234\ px\)\ \(1\).png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  margin: 0;
+}
+main {
+  width: 180px;
+  margin-top: 30px;
+}
+h4 img {
+  width: 83px;
+  height: 22px;
+  margin-right: 15px;
+}
+h4 {
+  border: 1px solid #3f3f3f;
+  border-radius: 35px;
+  background-color: #3f3f3f;
+  color: #ababab;
+  padding: 10px 19px;
+  text-align: center;
+}
+.gradia {
+  background: linear-gradient(to right, #f24255 0%, #f85466 46%, #fe6a7a 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-size: 60px;
+}
+h1 {
+  color: #ffffff;
+  font-size: 60px;
+}
+h3 {
+  color: #ababab;
+}
+.input-container {
+  position: relative;
+  width: 300px;
+  justify-content: center;
+}
+.input-field {
+  width: 100%;
+  padding: 10px;
+  /* padding-right: 50px;  */
+  border: 2px solid rgba(169, 169, 169, 0.5);
+  background-color: rgba(169, 169, 169, 0.1);
+  border-radius: 40px;
+  font-size: 16px;
+  outline: none;
+}
+.submit-button {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 16px;
+}
+.submit-button:hover {
+  background-color: darkred;
+}
