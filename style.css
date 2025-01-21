@@ -6,99 +6,109 @@
 }
 
 * {
-  justify-items: center;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
   font-family: "SF-pro", sans-serif;
 }
 
 body {
-  background-image: url("./assets/Mockup\ content\ \(3456\ px\ x\ 2234\ px\)\ \(1\).png");
-  background-size: conver;
+  background-image: url("./assets/Mockup content (3456 px x 2234 px) (1).png");
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  height: 100vh;
-  margin: 0;
-
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  height: 100vh; /* ارتفاع کل صفحه */
-  margin: 0;
+  justify-content: flex-start;
+  min-height: 100vh;
 }
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+
 #main {
   width: 230px;
   height: 230px;
-  margin-top: 50px;
 }
-h4 img {
-  width: 83px;
-  height: 22px;
-  margin-right: 15px;
-}
+
 #bit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border: 1px solid #3f3f3f;
   border-radius: 35px;
   background-color: #3f3f3f;
   color: #ababab;
   padding: 10px 19px;
-  text-align: center;
-  margin-bottom: 0px;
 }
+
+#bit img {
+  width: 83px;
+  height: 22px;
+  margin-right: 15px;
+}
+
 .container {
-  margin-top: 13px;
+  text-align: center;
+  margin-top: 30px;
 }
+
 .gradia {
   background: linear-gradient(to right, #f24255 0%, #f85466 46%, #fe6a7a 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
   font-size: 50px;
-  line-height: 0.8;
 }
+
 h1 {
   color: #ffffff;
   font-size: 50px;
-  line-height: 0.3;
 }
+
 #para {
   color: #8e8d8d;
+  margin-top: 20px;
 }
+
 .input-container {
   position: relative;
   width: 380px;
-  margin-top: 20px;
+  margin-top: 50px;
+  margin-bottom: 100px;
 }
+
 .input-field {
   width: 100%;
-  padding: 10px 3px 10px 20px;
-  /* padding-right: 50px;  */
+  padding: 10px 20px;
   border: 2px solid rgba(169, 169, 169, 0.1);
   background-color: rgba(169, 169, 169, 0.1);
   border-radius: 40px;
   font-size: 16px;
   outline: none;
-  height: 50px;
+  height: 60px;
 }
+
 .submit-button {
   position: absolute;
-  right: 0;
+  right: 10px;
   top: 50%;
   transform: translateY(-50%);
   background-color: red;
   color: white;
   border: none;
-  padding: 5px 10px;
   border-radius: 30px;
   cursor: pointer;
   font-size: 16px;
-  width: 120px;
+  width: 100px;
   height: 44px;
-  /* margin-right: 15px; */
 }
+
 .submit-button:hover {
   background-color: darkred;
-}
-h6 {
-  margin-top: 20px;
-  opacity: 0;
 }
