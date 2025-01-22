@@ -1,0 +1,26 @@
+@media screen and (max-width: 768px) {
+  #main {
+    width: 200px;
+    height: 200px;
+  }
+  #bit {
+    border: none;
+  }
+  .gradia {
+    font-size: 40px;
+  }
+  h1 {
+    font-size: 40px;
+  }
+  #para {
+    font-size: 14px;
+    margin: 15px;
+    margin-top: 35px;
+  }
+  .input-container {
+    width: 280px;
+  }
+  .submit {
+    width: 76px;
+  }
+}
