@@ -22,7 +22,7 @@
       </h4>
     </header>
     <div class="container">
-      <h1 class="gradia">Ultimate Contro at Your</h1>
+      <h1 class="gradia">Ultimate Control at Your</h1>
       <h1>Fingertips</h1>
       <h4 id="para">
         We enhances businesses' ability to boost customer engagement through
@@ -31,9 +31,17 @@
       </h4>
     </div>
     <div class="input-container">
-      <input type="text" class="input-field" placeholder="Enter your email" />
-      <button class="submit-button">submit</button>
+      <form>
+        <input
+          id="input"
+          type="email"
+          pattern="[^ @]*@[^ @]*"
+          placeholder="Enter your email"
+        />
+        <input id="submit" type="submit" value="Submit" />
+      </form>
     </div>
+    <p id="message" style="display: none; color: green; font-weight: bold"></p>
     <script src="index.js"></script>
   </body>
 </html>
