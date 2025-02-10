@@ -32,16 +32,22 @@
 document
   .getElementById("emailForm")
   .addEventListener("submit", function (event) {
+    event.preventDefault(); // ⛔ جلوگیری از رفرش شدن صفحه
+
     const emailInput = document.getElementById("input");
     const message = document.getElementById("message");
 
+    if (!emailInput.value) {
+      return; // اگر اینپوت خالی بود، هیچی نشون نده
+    }
+
     if (!emailInput.checkValidity()) {
-      emailInput.reportValidity();
+      emailInput.reportValidity(); // نمایش ارور پیش‌فرض مرورگر برای ایمیل نامعتبر
       return;
     }
 
-    event.preventDefault(); // از ارسال فرم جلوگیری می‌کنیم که صفحه رفرش نشه
-
-    message.textContent = "Submitted successfully!"; // نمایش پیام
-    message.style.display = "block"; // پیام رو قابل دیدن می‌کنیم
+    // نمایش پیام موفقیت
+    message.textContent = "Submitted successfully!";
+    message.style.display = "block";
+    message.style.color = "green";
   });
